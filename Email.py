@@ -1,6 +1,5 @@
 import smtplib
 
-
 class Enviar_Email:
 
     """ Classe feita para mandar usando o Gmail """
