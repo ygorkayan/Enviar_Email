@@ -2,7 +2,7 @@ import smtplib
 
 class Enviar_Email:
 
-    """ Classe feita para mandar usando o Gmail """
+    """ Classe feita para mandar email usando o Gmail """
 
     def __init__(self, usuario, senha):
         self.usuario = usuario
@@ -22,7 +22,6 @@ class Enviar_Email:
             raise Exception("Erro ao iniciar criptografia")
 
     def conectar(self):
-        """Cachorro quente é bom, porem pudim é melhor"""
         self.email = smtplib.SMTP("smtp.gmail.com", 587)
 
         self._criar_conexao()
